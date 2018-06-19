@@ -11,9 +11,47 @@ public class PageController {
 	public ModelAndView index() {
 		
 		ModelAndView mv = new ModelAndView("Page");
-		mv.addObject("Gtreetings", "wel come spring program");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
+	
+	@RequestMapping(value="/about")
+	public ModelAndView about() {
+		
+		ModelAndView mv = new ModelAndView("Page");
+		mv.addObject("title", "About Us");
+		mv.addObject("userClickAbout", true);
+		return mv;
+	}
+	
+	@RequestMapping(value="/contact")
+	public ModelAndView Contact() {
+		
+		ModelAndView mv = new ModelAndView("Page");
+		mv.addObject("title", "Contact Us");
+		mv.addObject("userClickContact", true);
+		return mv;
+	}
+	
+	@RequestMapping(value="/services")
+	public ModelAndView Services() {
+		
+		ModelAndView mv = new ModelAndView("Page");
+		mv.addObject("title", "Services");
+		mv.addObject("userClickServices", true);
+		return mv;
+	}
+	
+	@RequestMapping(value="/branches")
+	public ModelAndView Branches() {
+		
+		ModelAndView mv = new ModelAndView("Page");
+		mv.addObject("title", "Branches");
+		mv.addObject("userClickBranches", true);
+		return mv;
+	}
+	
 	
 	/*@RequestMapping(value="/test")
 	public ModelAndView test(@RequestParam(value="Gtreetings" , required = false ) String Gtreeting){
