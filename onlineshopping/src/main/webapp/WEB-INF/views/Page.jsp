@@ -25,9 +25,9 @@
 
 <!-- Bootstrap  -->
 <%-- <link href="${css}/boosttrap-readable.css" rel="stylesheet"> --%>
-
+<link href="${css}/darkly.css" rel="stylesheet">
 <%-- <link href="${css}/personal-css.css" rel="stylesheet"> --%>
-<link href="${css}/Slate.css" rel="stylesheet">
+<%-- <link href="${css}/Slate.css" rel="stylesheet"> --%>
 <!-- Add custom CSS here -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
@@ -61,6 +61,11 @@
 			<c:if test="${userClickBranches == true}">
 				<%@include file="branch.jsp"%>
 			</c:if>
+			
+				<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<%@include file="listproducts.jsp"%>
+			</c:if>
+			
 
 		</div>
 

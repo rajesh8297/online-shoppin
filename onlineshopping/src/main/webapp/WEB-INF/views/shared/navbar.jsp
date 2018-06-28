@@ -13,6 +13,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
+                    <li id="listProducts">
+                        <a href="${contxtRoot}/show/all/products">View Products</a>
+                    </li>
                     <li id="about">
                        <a href="${contxtRoot}/about"> About Us</a>
                     </li>

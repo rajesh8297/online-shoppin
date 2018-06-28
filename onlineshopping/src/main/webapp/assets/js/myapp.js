@@ -24,10 +24,15 @@ $(function(){
 	case 'Branches':
 			$('#branches').addClass('active');
 			break;
-		
+			
+			
+	case 'All Products':
+		$('#listProducts').addClass('active');
+		break;			
 			
 	default :
-		$('#home').addClass('active');
+		$('#listProducts').addClass('active');
+	     $('#a-'+ menu).addClass('active');
 	   break;
 		
 	}
